@@ -4,18 +4,18 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
-import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationBarComponent,
-    HomeComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
+      { path:'contact', component:ContactComponent }
     ])
   ],
   providers: [],
