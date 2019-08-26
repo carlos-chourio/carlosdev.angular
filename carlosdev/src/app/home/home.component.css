@@ -1,0 +1,53 @@
+
+.page-header { 
+    background: url(/assets/coding.jpg) no-repeat; 
+    position: relative; 
+    background-size: cover; 
+    align-items: center center;
+}
+
+
+.btn {
+    position: relative;
+    align-self: flex-end;
+    align-self: baseline;
+    min-height: 40px;
+
+}
+
+@media(min-width:1200px) {
+    .page-header {
+        height: 600px;
+    }
+}
+
+@media(max-width:1200px) {
+    .page-header {
+        height: 450px;
+    }
+}
+
+@media(max-width:996px) {
+    .page-header {
+        height: 350px;
+    }  
+}
+
+@media(max-width:768px) {
+    .page-header {
+        height: 250px;
+    }
+}
+
+.page-title {
+    color: white;
+    align-self: center;
+}
+
+.row-sample {
+    height: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
