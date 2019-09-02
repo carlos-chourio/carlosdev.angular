@@ -11,6 +11,10 @@ export class NavigationBarComponent implements OnInit {
     console.log("search");
   }
 
+  clickHamburger() : void {
+
+  }
+
   constructor() { }
 
   ngOnInit() {

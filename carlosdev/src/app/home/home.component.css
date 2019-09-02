@@ -1,10 +1,11 @@
 .layout {
   background-image: url("../../assets/starship.svg");
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-origin: border-box;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
+  height: fit-content;
 }
 
 .home-container {
