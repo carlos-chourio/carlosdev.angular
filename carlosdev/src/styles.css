@@ -4,7 +4,5 @@
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab|Montserrat&display=swap');
 body {
     font-family: 'Hepta Slab', serif;
-}
-div {
-    font-size: 22px;
+    font-size: 8pt;
 }

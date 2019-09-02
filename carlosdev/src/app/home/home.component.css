@@ -1,11 +1,63 @@
+.layout {
+  background-image: url("../../assets/starship.svg");
+  background-attachment: fixed;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
 
-.page-header { 
-    background: url(/assets/coding.jpg) no-repeat; 
-    position: relative; 
-    background-size: cover; 
+.home-container {
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color:white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.margin {
+  margin: 10px;
+}
+
+.page-header {
+    /* background-image: url("../../assets/coding.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    background-color:rgb(175, 163, 163);
+    color:gray;
+    transition: all 0.2ms linear;
     align-items: center center;
 }
 
+.brand {
+  margin: 40px;
+  font-size: 1.2em;
+  color:white;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+.navigation-link {
+  list-style: none;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navigation-link:hover {
+  color:white;
+  text-shadow: 1px 1px 5px gray;
+  text-decoration: none;
+}
+
+.navigation {
+  list-style: none;
+}
+
+.navigation .navigation-link {
+  font-size: 2em;
+}
 
 .btn {
     position: relative;
@@ -30,7 +82,7 @@
 @media(max-width:996px) {
     .page-header {
         height: 350px;
-    }  
+    }
 }
 
 @media(max-width:768px) {

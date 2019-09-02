@@ -1,25 +1,13 @@
-<div class="page-header">
-    <div class="container  full-height">
-        <div class="row row-sample">
-            <div class="row">
-                <h1 class="page-title">Hi, I'm Carlos Chourio and I'm a Software Developer!</h1>
-                <button class="col-3 offset-4 btn btn-outline-success ">Contact Me</button>
-            </div>
-        </div>
-        
+<div class="layout">
+  <app-navigation-bar></app-navigation-bar>
+  <div class="home-container">
+    <div class="margin">
+      <h1><a class="brand navigation-link" [routerLink]="['/']">Carlos Chourio</a></h1>
+      <ul class="navigation">
+        <li><a class="h3 navigation-link" [routerLink]="['/about-me']">About me</a></li>
+        <li><a class="h3 navigation-link" [routerLink]="['/resume']">Resume</a></li>
+        <li><a class="h3 navigation-link" [routerLink]="['/portfolio']">What I've worked on</a></li>
+      </ul>
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <h1 class="px-5 py-5"></h1>
-    </div>
-</div>
-<div>
-</div>
-<div class="container">
-    <div class="row ">
-        <p class="px-5">I'm an electronic engineer and software developer, advocate of .NET Technologies.
-            Interested on Full Stack Web development</p>
-    </div>
-
+  </div>
 </div>
