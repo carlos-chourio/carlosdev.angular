@@ -1,40 +1,6 @@
-
 .nav-transparent {
   background:transparent;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end;  
 }
 
-.hamburger-line {
-  height: 2px;
-  background: purple;
-  widows: 100%;
-  margin-top: 5px;
-  transition: all 0.7s linear;
-}
-
-.hamburger-button {
-  height: 50;
-  width: 36px;
-  background: transparent;
-  border-width: 0px;
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
-
-.hamburger-button:hover > .hamburger-line {
-  background: white;
-}
-
-.hamburger-button.clicked > .hamburger-line:first-child {
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-.hamburger-button.clicked > .hamburger-line.middle-element {
-  transform: translateY(-500%);
-}
-
-.hamburger-button.clicked > .hamburger-line:last-child {
-  transform: translateY(50%) rotate(+45deg);
-}

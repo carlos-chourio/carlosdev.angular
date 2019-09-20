@@ -1,6 +1,6 @@
 import { Post } from './post';
 import { Injectable } from '@angular/core';
-import { Guid } from 'guid-typescript';
+// import { Guid } from 'guid-typescript';
 import { of, Observable } from 'rxjs';
 
 @Injectable({
@@ -9,7 +9,7 @@ import { of, Observable } from 'rxjs';
 export class PostService {
   getPosts(): Observable<Post[]> {
     let posts:Post[] = [{
-        id: Guid.create(),
+        id:1, // Guid.create(),
         title: "My First Post",
         content: "Lorem Ipsum",
         author: {
@@ -21,7 +21,7 @@ export class PostService {
         comments: null
       },
       {
-        id: Guid.create(),
+        id: 2, //Guid.create(),
         title: "My Second Post",
         content: "Lorem Ipsum palumn",
         author: {

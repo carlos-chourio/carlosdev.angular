@@ -6,15 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation-bar.component.css']
 })
 export class NavigationBarComponent implements OnInit {
-
-  search() : void {
-    console.log("search");
-  }
-
-  clickHamburger() : void {
-
-  }
-
   constructor() { }
 
   ngOnInit() {

@@ -1,9 +1,9 @@
 .layout {
-  background-image: url("../../assets/starship.svg");
-  /* background-attachment: fixed; */
+  /* background-image: url("../../assets/starship.svg");
+  background-attachment: fixed;
   background-origin: border-box;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   display: block;
   height: fit-content;
 }

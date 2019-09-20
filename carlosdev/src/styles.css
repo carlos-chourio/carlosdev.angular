@@ -3,6 +3,6 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab|Montserrat&display=swap');
 body {
-    font-family: 'Hepta Slab', serif;
+    font-family: 'Montserrat', serif;
     font-size: 8pt;
 }

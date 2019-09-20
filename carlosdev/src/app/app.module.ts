@@ -9,6 +9,7 @@ import { PostsComponent } from './posts/posts.component';
 import { CommonUtilitiesModule } from './common-utilities/common-utilities.module';
 import { PostSummaryComponent } from './posts/post-summary.component';
 import { TruncDescriptionPipe } from './common-utilities/trunc-description.pipe';
+import { HamburgerButtonComponent } from './hamburger-button/hamburger-button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TruncDescriptionPipe } from './common-utilities/trunc-description.pipe'
     HomeComponent,
     PostsComponent,
     PostSummaryComponent,
-    TruncDescriptionPipe
+    TruncDescriptionPipe,
+    HamburgerButtonComponent
   ],
   imports: [
     BrowserModule,
