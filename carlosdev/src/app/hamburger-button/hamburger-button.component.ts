@@ -15,7 +15,6 @@ export class HamburgerButtonComponent implements OnInit {
   clickedClass="";
   
   clickHamburger() : void {
-    console.log("hola");
     if (this.clickedClass === "") {
       this.clickedClass="clicked";
     } else {
