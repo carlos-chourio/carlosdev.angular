@@ -1,28 +1,31 @@
+:host {
+  --pixelsTranslated:0px;
+}
+
 .hamburger-line {
-  height: 2px;
-  background: purple;
-  width: 100%;
-  margin-top: 8px;
-  transition: all 0.7s linear;
+  background: white;
+  border-radius: 2%;
+  transition: all 0.6s linear;
 }
 
 .hamburger-button {
-  padding:10px;
-  height: 80px;
-  width: 60px;
   background: transparent;
   border-width: 0px;
-  display: block;
+  outline: none;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .hamburger-button:hover > .hamburger-line {
-  background: white;
+  background: purple;
+  box-shadow: black 4px 4px 4px;
 }
 
 .hamburger-button.clicked > .hamburger-line:first-child {
-  transform: translateY(500%) rotate(-45deg);
+  transform: translateY(var(--pixelsTranslated)) rotate(-45deg);
 }
 
 .hamburger-button.clicked > .hamburger-line.middle-element {
@@ -31,5 +34,5 @@
 }
 
 .hamburger-button.clicked > .hamburger-line:last-child {
-  transform: translateY(-500%) rotate(+45deg);
+  transform: translateY(calc(-1*var(--pixelsTranslated))) rotate(+45deg);
 }

@@ -1,19 +1,9 @@
-.layout {
-  /* background-image: url("../../assets/starship.svg");
-  background-attachment: fixed;
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  background-size: cover; */
-  display: block;
-  height: fit-content;
-}
-
 .home-container {
-  height: 100vh;
+  height: 100%;
   display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
   color:white;
   text-shadow: 1px 1px 5px black;
 }
@@ -23,22 +13,16 @@
 }
 
 .page-header {
-    /* background-image: url("../../assets/coding.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
     background-color:rgb(175, 163, 163);
     color:gray;
     transition: all 0.2ms linear;
-    align-items: center center;
 }
 
 .brand {
   margin: 40px;
-  font-size: 1.2em;
+  font-size: 1em;
   color:white;
-  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .navigation-link {
@@ -50,6 +34,11 @@
   color:white;
   text-shadow: 1px 1px 5px gray;
   text-decoration: none;
+  font-size: 1.1em !important;
+}
+
+.brand:hover {
+  font-size: 1.5em;
 }
 
 .navigation {
@@ -57,7 +46,7 @@
 }
 
 .navigation .navigation-link {
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .btn {

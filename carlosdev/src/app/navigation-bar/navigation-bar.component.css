@@ -1,6 +1,14 @@
+.flex-nav-bar {
+  display: flex;
+  transition: all 0.3s linear;
+  justify-content: flex-end;  
+}
+
 .nav-transparent {
   background:transparent;
-  display: flex;
-  justify-content: flex-end;  
+}
+
+.nav-opaque {
+  background: rgba(255, 255, 255, 0.3);
 }
 

@@ -1,15 +1,5 @@
-<nav class="navbar nav-transparent align-top sticky-top navbar-expand-lg navbar-expand-md">
-    <hamburger-button></hamburger-button>    
-    <!-- <a class="navbar-brand" [routerLink]="['/']">Carlosdev</a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"
-      aria-controls="navbarResponsive" aria-expanded="false" aria-label="toggle-navigation"><i
-        class="fa fa-bars text-white"></i></button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" [routerLink]="['/contact']">Contact me</a></li>
-        <li class="nav-item"><a class="nav-link" href=#Link2>LINK2</a></li>
-        <li class="nav-item"><a class="nav-link" href=#Link3>LINK3</a></li>
-        <li class="nav-item"><a class="nav-link" href=#Link4>LINK4</a></li>
-      </ul>
-    </div> -->
+<nav [ngClass]="isNavbarOpaque? 'nav-opaque' : 'nav-transparent'" class="navbar flex-nav-bar align-top sticky-top navbar-expand-lg navbar-expand-md">
+    <div class="my-3">
+      <hamburger-button [height]='26' [width]='40' [lineHeight]='2' (clicked)='hamburgerClicked()'></hamburger-button>    
+    </div>
 </nav>

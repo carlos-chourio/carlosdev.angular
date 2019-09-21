@@ -8,7 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { CommonUtilitiesModule } from './common-utilities/common-utilities.module';
 import { PostSummaryComponent } from './posts/post-summary.component';
-import { TruncDescriptionPipe } from './common-utilities/trunc-description.pipe';
 import { HamburgerButtonComponent } from './hamburger-button/hamburger-button.component';
 
 @NgModule({
@@ -19,16 +18,15 @@ import { HamburgerButtonComponent } from './hamburger-button/hamburger-button.co
     HomeComponent,
     PostsComponent,
     PostSummaryComponent,
-    TruncDescriptionPipe,
     HamburgerButtonComponent
   ],
   imports: [
     BrowserModule,
     CommonUtilitiesModule,
     RouterModule.forRoot([
-      { path: 'contact', component:ContactComponent },
-      { path: '', component:HomeComponent },
-      {path: 'posts-summary', component:PostSummaryComponent }
+      { path: 'contact', component: ContactComponent },
+      { path: '', component: HomeComponent },
+      { path: 'posts-summary', component: PostSummaryComponent }
     ])
   ],
   providers: [],

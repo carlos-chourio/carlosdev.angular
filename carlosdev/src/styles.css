@@ -2,10 +2,12 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab|Montserrat&display=swap');
+
 body {
     font-family: 'Montserrat', serif;
     background: url('assets/starship-animated.svg');
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 8pt;
+    background-size: cover;    
+    font-size: 16pt;
 }

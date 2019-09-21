@@ -1,5 +1,11 @@
 .background {
-    display: block;
-    width:100vw;
-    height:100vh;
+    display: flex;
+    flex-direction: column;
 }
+.nav-bar {
+    height: 10vh;
+}
+.content {
+    height: 90vh;
+}
+

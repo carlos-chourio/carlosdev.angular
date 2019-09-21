@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollService, ScrollEventArgs } from '../service/scroll.service';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -6,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation-bar.component.css']
 })
 export class NavigationBarComponent implements OnInit {
-  constructor() { }
+  isNavbarOpaque: boolean;
+
+  hamburgerClicked(): void {
+    
+  }
+
+  constructor(private scrollService: ScrollService) {
+    scrollService.scrolledWindows.subscribe((scrollArgs: ScrollEventArgs) => 
+      this.isNavbarOpaque = !scrollArgs.isTop);
+    console.log(scrollService);
+  }
 
   ngOnInit() {
   }
