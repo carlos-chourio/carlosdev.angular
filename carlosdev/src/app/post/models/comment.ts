@@ -1,5 +1,5 @@
 //import { Guid } from "guid-typescript";
-import { IUser } from '../common-utilities/user';
+import { IUser } from '../../common-utilities/user';
 
 export interface IComment {
     id: number;// Guid;

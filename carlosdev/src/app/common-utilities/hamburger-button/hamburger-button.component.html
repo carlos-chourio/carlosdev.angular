@@ -1,4 +1,4 @@
-<button [style.height.px]='height' [style.width.px]='width' [ngClass]='clickedClass' class='hamburger-button' (click)='clickHamburger()'>
+<button *ngIf='buttonVisible' [style.height.px]='height' [style.width.px]='width' [ngClass]='clickedClass' class='hamburger-button' (click)='clickHamburger()'>
     <div [style.height.px]='lineHeight' [style.width.px]='width' class="hamburger-line"></div>
     <div [style.height.px]='lineHeight' [style.width.px]='width' class="hamburger-line middle-element"></div>
     <div [style.height.px]='lineHeight' [style.width.px]='width' class="hamburger-line"></div>

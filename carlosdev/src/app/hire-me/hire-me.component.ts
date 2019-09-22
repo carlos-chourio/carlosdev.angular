@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css'],
+  templateUrl: './hire-me.component.html',
+  styleUrls: ['./hire-me.component.css'],
 })
-export class ContactComponent implements OnInit {
+export class HireMeComponent implements OnInit {
   email: string;
   name: string;
   title: string;

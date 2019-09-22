@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollService, ScrollEventArgs } from '../service/scroll.service';
+import { ScrollService, ScrollEventArgs } from '../../service/scroll.service';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -13,7 +13,7 @@ export class NavigationBarComponent implements OnInit {
     
   }
 
-  constructor(private scrollService: ScrollService) {
+  constructor(scrollService: ScrollService) {
     scrollService.scrolledWindows.subscribe((scrollArgs: ScrollEventArgs) => 
       this.isNavbarOpaque = !scrollArgs.isTop);
     console.log(scrollService);

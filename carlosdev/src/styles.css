@@ -11,3 +11,7 @@ body {
     background-size: cover;    
     font-size: 16pt;
 }
+
+p {
+    font-size: 12pt;
+}

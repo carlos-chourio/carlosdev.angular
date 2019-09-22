@@ -1,16 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TruncDescriptionPipe } from './trunc-description.pipe';
-
+import { TruncDescriptionPipe } from './pipes/trunc-description.pipe';
+import { HamburgerButtonComponent } from './hamburger-button/hamburger-button.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 @NgModule({
   declarations: [
-    TruncDescriptionPipe
+    TruncDescriptionPipe,
+    HamburgerButtonComponent,
+    NavigationBarComponent,
   ],
-  imports: [],
+  imports: [
+    CommonModule
+  ],
   exports: [
     TruncDescriptionPipe,
-    CommonModule
+    CommonModule,
+    HamburgerButtonComponent,
+    NavigationBarComponent
   ]
 })
 export class CommonUtilitiesModule { }

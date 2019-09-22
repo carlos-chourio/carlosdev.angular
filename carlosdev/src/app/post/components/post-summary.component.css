@@ -1,0 +1,12 @@
+.post {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; 
+    border-radius: 0px;
+    background: rgb(255,255,255,0.7);
+}
+
+.post .btn {
+    align-self: flex-end;
+}

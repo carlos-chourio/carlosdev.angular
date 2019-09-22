@@ -1,0 +1,5 @@
+<div class="post px-5" *ngFor='let post of posts'>
+    <h2>{{post.title}}</h2>
+    <p>{{post.content | truncDescription : 300 }}</p>
+    <button class="btn btn-info">Keep Reading</button>
+</div>

@@ -1,0 +1,29 @@
+<nav class='side-bar overlay'>
+    <div class='hamburger-button'>
+        <hamburger-button [buttonVisible]='false' [height]='26' [width]='40' [lineHeight]='2'
+            (clicked)='hamburgerClicked()'></hamburger-button>
+    </div>
+    <div class="side-bar-links">
+        <h1><a class="navigation-link brand" [routerLink]="['/']">Carlos Chourio</a></h1>
+        <ul class="navigation container">
+            <li>
+                <span>
+                    <div *ngIf='showIcon' class='fa fa-home col-md-1'></div>
+                    <a class="h3 navigation-link col-md-11" [routerLink]="['/contact']">About me</a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <div *ngIf='showIcon' class='fa fa-file col-md-1'></div>
+                    <a class="h3 navigation-link col-md-11" [routerLink]="['/resume']">Resume</a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <div *ngIf='showIcon' class='fa fa-briefcase col-md-1'></div>
+                    <a class="h3 navigation-link col-md-11" [routerLink]="['/portfolio']">What I've worked on</a>
+                </span>
+            </li>
+        </ul>
+    </div>
+</nav>

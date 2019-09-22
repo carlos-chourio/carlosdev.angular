@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PostService } from './post.service';
+import { PostService } from '../services/post.service';
 import { tap } from 'rxjs/operators';
-import { Post } from './post';
+import { Post } from '../models/post';
 
 @Component({
   selector: 'app-post-summary',

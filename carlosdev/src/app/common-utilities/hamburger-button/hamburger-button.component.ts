@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter, Input, HostBinding } from '@angular/core';
-import { withLatestFrom } from 'rxjs/operators';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
@@ -12,6 +11,7 @@ export class HamburgerButtonComponent implements OnInit {
   @Output() clicked: EventEmitter<any> = new EventEmitter();
   @Input() height : number;
   @Input() width : number;
+  @Input() buttonVisible : boolean;
   _separation : number;
   _lineHeight : number;
   pixelsTranslated : number;
@@ -36,6 +36,7 @@ export class HamburgerButtonComponent implements OnInit {
     this.height = 30;
     this.width = 80;
     this.lineHeight = 3;
+    this.buttonVisible = true;
   }
 
   ngOnInit() {
