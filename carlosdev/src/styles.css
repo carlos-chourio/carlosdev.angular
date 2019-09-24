@@ -5,11 +5,12 @@
 
 body {
     font-family: 'Montserrat', serif;
-    background: url('assets/starship-animated.svg');
-    background-attachment: fixed;
+    background: url('assets/Untitled.svg');
+    background-attachment: local;
     background-repeat: no-repeat;
     background-size: cover;    
     font-size: 16pt;
+    overflow-x: hidden;
 }
 
 p {

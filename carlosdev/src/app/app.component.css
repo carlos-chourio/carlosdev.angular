@@ -1,1 +1,9 @@
 
+.layout {
+    display: flex;
+}
+
+.nav-bar {
+    width: 50px;
+    margin-left: auto;
+}
