@@ -19,7 +19,15 @@ export class ScrollService implements OnDestroy {
             this.scrolledWindows.emit(new ScrollEventArgs(false));
         }
     }
+
+    scrollToElementId(id: string): void {
+        const element = document.getElementById(id);
+        console.log(element);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
 }
 export class ScrollEventArgs {
-    constructor(public isTop : boolean) {}
+    constructor(public isTop: boolean) { }
 }

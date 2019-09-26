@@ -3,14 +3,19 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab|Montserrat&display=swap');
 
+html {
+    overflow: hidden;
+}
+
 body {
     font-family: 'Montserrat', serif;
     background: url('assets/Unitled2.svg');
-    background-attachment: local;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;    
     font-size: 16pt;
     overflow-x: hidden;
+    overflow: scroll;
 }
 
 p {

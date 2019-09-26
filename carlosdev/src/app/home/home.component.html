@@ -1,29 +1,36 @@
 <div class="home-container">
-    <div>
-        <div class='flex-center say-hi'>
-            <div class='inline-text'>
-                <div>Hi, I'm</div>
-                <div class='my-brand'> Carlos Chourio</div>
+    <div class='flex'>
+        <div class='content'>
+            <div class='flex-center say-hi'>
+                <div class='inline-text'>
+                    <div>Hi, I'm</div>
+                    <div class='my-brand'> Carlos Chourio</div>
+                </div>
             </div>
             <h3 class='my-5'>
                 Software Developer | Electronic Engineer
             </h3>
+            <nav class='flex-center'>
+                <ul class='nav-bar'>
+                    <li>
+                        <button class='nav-button'><i class="fab fa-github"></i></button>
+                    </li>
+                    <li>
+                        <button class='nav-button'><i class="fab fa-stack-overflow"></i></button>
+                    </li>
+                    <li>
+                        <button class='nav-button'><i class="fab fa-linkedin"></i></button>
+                    </li>
+                    <li>
+                        <button class='nav-button'><i class="fab fa-twitter"></i></button>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class='flex-center'>
-            <ul class='nav-bar'>
-                <li>
-                    <button class='nav-button'><i class="fab fa-github"></i></button>
-                </li>
-                <li>
-                    <button class='nav-button'><i class="fab fa-stack-overflow"></i></button>
-                </li>
-                <li>
-                    <button class='nav-button'><i class="fab fa-linkedin"></i></button>
-                </li>
-                <li>
-                    <button class='nav-button'><i class="fab fa-twitter"></i></button>
-                </li>
-            </ul>
-        </nav>
+        <div id='click'>
+            <button [routerLink]="['/contact']" (click)='moveTo("hire-me")' class='click-me-button nav-button'>
+                <i class='fa fa-angle-double-down'></i>
+            </button>
+        </div>
     </div>
 </div>

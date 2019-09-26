@@ -24,7 +24,10 @@ import { SideNavBarComponent } from './side-nav-bar/side-nav-bar.component';
       { path: 'contact', component: HireMeComponent },
       { path: '', component: HomeComponent },
       ...POST_ROUTES
-    ])
+    ], {
+        scrollPositionRestoration: 'enabled',
+        anchorScrolling: 'enabled'
+      })
   ],
   providers: [],
   bootstrap: [AppComponent]

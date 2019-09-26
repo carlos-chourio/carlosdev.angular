@@ -25,14 +25,14 @@
 }
 
 .hamburger-button.clicked > .hamburger-line:first-child {
-  transform: translateY(var(--pixelsTranslated)) rotate(-45deg);
+  transform: translateY(var(--pixelsTranslated)) rotate(-135deg);
 }
 
 .hamburger-button.clicked > .hamburger-line.middle-element {
-  transform: translateY(-1000%);
+  transform: rotate(90deg);
   opacity:0;
 }
 
 .hamburger-button.clicked > .hamburger-line:last-child {
-  transform: translateY(calc(-1*var(--pixelsTranslated))) rotate(+45deg);
+  transform: translateY(calc(-1*var(--pixelsTranslated))) rotate(+135deg);
 }
